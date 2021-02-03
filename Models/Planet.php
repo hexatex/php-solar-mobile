@@ -11,7 +11,7 @@ class Planet extends Model implements Satellite, AstroBody, Primary
     /*
      * Satellite
      */
-    public function getIsNatural()
+    public function getIsNatural(): bool
     {
         return $this->code !== 'nibiru';
     }

@@ -5,7 +5,10 @@ trait IsPrimary
     /** @var Satellite[] */
     private $satellites = [];
 
-    public function getSatellites()
+    /**
+     * @return Satellite[]
+     */
+    public function getSatellites(): array
     {
         return $this->satellites;
     }
@@ -17,11 +20,11 @@ trait IsPrimary
 
     public function addSatellite(Satellite $satellite)
     {
-        $this->satellites[$satellite->getId()] = $satellite;
+        $this->satellites[$satellite->getCode()] = $satellite;
     }
 
     public function removeSatellite(Satellite $satellite)
     {
-        unset($this->satellites[$satellite->getId()]);
+        unset($this->satellites[$satellite->getCode()]);
     }
 }

@@ -8,7 +8,7 @@ trait IsSatellite
     /** @var Primary */
     private $primary;
 
-    public function getPrimary()
+    public function getPrimary(): ?Primary
     {
         return $this->primary;
     }
@@ -25,7 +25,7 @@ trait IsSatellite
         }
 
         if ($this->primary instanceof Star) {
-            return $this->primary->getCode() === 'sun';
+            return $this->primary->getCode() === AstroObjects::sun;
         }
 
         if ($this->primary instanceof Satellite) {

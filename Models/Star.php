@@ -21,15 +21,10 @@ class Star extends Model implements Primary
         return true;
     }
 
-    public function getIsSolar(): bool
-    {
-        return $this->code === 'sun';
-    }
-
     /*
      * Accessors & Mutators
      */
-    public function getRadiusKm()
+    public function getRadiusKm(): int
     {
         return $this->radiusKm;
     }
@@ -39,7 +34,10 @@ class Star extends Model implements Primary
         $this->radiusKm = $radiusKm;
     }
 
-    public function getPlanets()
+    /**
+     * @return Planet[]
+     */
+    public function getPlanets(): array
     {
         return $this->planets;
     }
@@ -51,6 +49,6 @@ class Star extends Model implements Primary
 
     public function addPlanet(Planet $planet)
     {
-        $this->planets[$planet->getId()] = $planet;
+        $this->planets[$planet->getCode()] = $planet;
     }
 }
