@@ -2,18 +2,16 @@
 
 trait IsAstroObject
 {
-    /** @var Primary */
-    protected $primary;
+    /** @var string */
+    protected $code;
 
-    /*
-     * AstroObject
-     */
-    public function getIsSolar(): bool
+    public function getCode(): string
     {
-        if (!$this->primary) { // Override when true (if Star is "sun")
-            return false;
-        }
+        return $this->code;
+    }
 
-        return $this->primary->getIsSolar();
+    public function setCode(string $code)
+    {
+        $this->code = $code;
     }
 }

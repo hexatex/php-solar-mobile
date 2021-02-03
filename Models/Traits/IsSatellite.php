@@ -17,4 +17,21 @@ trait IsSatellite
     {
         $this->primary = $primary;
     }
+
+    public function getIsSolar(): bool
+    {
+        if (!$this->primary) { // Override when true (if Star is "sun")
+            return false;
+        }
+
+        if ($this->primary instanceof Star) {
+            return $this->primary->getCode() === 'sun';
+        }
+
+        if ($this->primary instanceof Satellite) {
+            return $this->primary->getIsSolar();
+        }
+
+        return false;
+    }
 }

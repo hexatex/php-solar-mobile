@@ -21,6 +21,6 @@ class Planet extends Model implements Satellite, AstroBody, Primary
      */
     public function getIsTightlyBound(): bool
     {
-        // TODO: Implement getIsTightlyBound() method.
+        return true;
     }
 }

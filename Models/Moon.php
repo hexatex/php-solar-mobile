@@ -9,7 +9,7 @@ class Moon extends Model implements Satellite, AstroBody
      */
     public function getIsNatural()
     {
-        return true;
+        return $this->primary->getCode() !== 'earth';
     }
 
     /*

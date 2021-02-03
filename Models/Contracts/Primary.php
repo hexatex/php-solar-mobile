@@ -5,5 +5,4 @@
  */
 interface Primary extends AstroObject
 {
-
 }
