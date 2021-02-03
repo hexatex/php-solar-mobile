@@ -2,10 +2,21 @@
 
 class Moon extends Model implements Satellite, AstroBody
 {
-    use IsSatellite;
+    use IsSatellite, IsAstroBody;
 
-    public function getIsSolar(): bool
+    /*
+     * Satellite
+     */
+    public function getIsNatural()
     {
-        return $this->primary->getIsSolar();
+        return true;
+    }
+
+    /*
+     * AstroBody
+     */
+    public function getIsTightlyBound(): bool
+    {
+        return true;
     }
 }

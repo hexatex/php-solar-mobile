@@ -2,13 +2,29 @@
 
 class Star extends Model implements Primary
 {
-    use IsPrimary;
+    use IsPrimary, IsAstroObject;
 
     /** @var int */
     private $radiusKm;
 
+    /** @var string identifier for programmatic use */
+    private $code;
+
     /** @var Planet[] */
     private $planets = [];
+
+    /*
+     * AstroObject
+     */
+    public function getIsTightlyBound(): bool
+    {
+        return true;
+    }
+
+    public function getIsSolar(): bool
+    {
+        return $this->code === 'sun';
+    }
 
     /*
      * Accessors & Mutators
