@@ -1,6 +1,6 @@
 <?php
 
-class Universe extends Model
+class Universe extends Model implements LargeScaleStructure
 {
     /** @var AstroObject[] */
     private $astroObjects = [];

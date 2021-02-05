@@ -20,7 +20,7 @@ trait IsSatellite
 
     public function getIsSolar(): bool
     {
-        if (!$this->primary) { // Override when true (if Star is "sun")
+        if (!$this->primary) { // It is only solar if either directly or indirectly in orbit of the Sun
             return false;
         }
 

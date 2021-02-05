@@ -42,6 +42,9 @@ class Star extends Model implements Primary
         return $this->planets;
     }
 
+    /**
+     * @param Planet[] $planets
+     */
     public function setPlanets(array $planets)
     {
         $this->planets = $planets;
