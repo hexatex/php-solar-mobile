@@ -1,6 +1,6 @@
 <?php
 
-class GalaxyWall extends Model implements LargeScaleStructure, GalaxyFilament
+class GalaxyWall extends Model implements GalaxyFilament
 {
 
 }

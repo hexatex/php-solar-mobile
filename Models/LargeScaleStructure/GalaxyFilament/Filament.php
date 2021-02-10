@@ -1,6 +1,6 @@
 <?php
 
-class Filament extends Model implements LargeScaleStructure, GalaxyFilament
+class Filament extends Model implements GalaxyFilament
 {
 
 }

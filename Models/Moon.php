@@ -19,4 +19,9 @@ class Moon extends Model implements Satellite, AstroBody
     {
         return true;
     }
+
+    public function updatePosition()
+    {
+        $this->updateOrbit();
+    }
 }

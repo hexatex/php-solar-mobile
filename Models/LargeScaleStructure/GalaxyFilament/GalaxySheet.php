@@ -1,6 +1,6 @@
 <?php
 
-class GalaxySheet extends Model implements LargeScaleStructure, GalaxyFilament
+class GalaxySheet extends Model implements GalaxyFilament
 {
 
 }

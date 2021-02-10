@@ -1,6 +1,6 @@
 <?php
 
-class SuperclusterComplex extends Model implements LargeScaleStructure, GalaxyFilament
+class SuperclusterComplex extends Model implements GalaxyFilament
 {
 
 }

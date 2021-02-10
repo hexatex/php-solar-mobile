@@ -9,7 +9,6 @@ class Universe extends Model implements LargeScaleStructure
      * Accessors
      */
     /**
-     * Get AstroObjects
      * @return AstroObject[]
      */
     public function getAstroObjects(): array
