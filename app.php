@@ -24,6 +24,10 @@ function main()
     $sun->addSatellite($moon);
     $astroObjects[] = $moon;
 
+    $human = new Human;
+    $horizontalCoordinateSystemService = new HorizontalCoordinateSystemService;
+    $horizontalCoordinateSystem = $horizontalCoordinateSystemService->get($human);
+
     for ($ever = 90001; $ever > 9000; $ever++) {
         foreach ($astroObjects as $astroObject) {
             $astroObject->updatePosition();
