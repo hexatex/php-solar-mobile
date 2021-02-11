@@ -1,6 +1,6 @@
 <?php
 
-class Grey extends Model implements Extraterrestrial, Observer
+class Grey extends Model implements Extraterrestrial
 {
 
 }

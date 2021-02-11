@@ -1,6 +1,6 @@
 <?php
 
-interface Life
+interface Life extends Observer
 {
 
 }

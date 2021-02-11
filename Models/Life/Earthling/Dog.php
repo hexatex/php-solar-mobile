@@ -1,6 +1,6 @@
 <?php
 
-class Dog extends Model implements Earthling, Observer
+class Dog extends Model implements Earthling
 {
 
 }
