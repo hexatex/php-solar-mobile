@@ -4,9 +4,7 @@ class Planet extends Model implements Satellite, AstroBody, Primary, CenterPoint
 {
     use IsSatellite, IsPrimary, IsAstroBody;
 
-    private $code;
     private $name;
-    private $primary;
 
     /*
      * Satellite

@@ -1,6 +1,6 @@
 <?php
 
-interface  Earthling extends Life
+interface Earthling extends Life
 {
 
 }
