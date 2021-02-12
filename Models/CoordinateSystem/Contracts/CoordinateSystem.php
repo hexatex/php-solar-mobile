@@ -9,4 +9,6 @@ interface CoordinateSystem
 {
     public function setCenterPoint(CenterPoint $centerPoint);
     public function getCenterPoint(): CenterPoint;
+    public function getFundamentalPlane(): string;
+    public function getPoles(): string;
 }

@@ -2,7 +2,7 @@
 
 trait HasAstronomicalModel
 {
-    public function getAstronomicalModel()
+    public function getAstronomicalModel(): string
     {
         if ($this->centerPoint instanceof Planet && $this->centerPoint->getCode() === AstroObjects::earth) {
             return AstronomicalModels::geocentric;
