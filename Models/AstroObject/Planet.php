@@ -1,6 +1,6 @@
 <?php
 
-class Planet extends Model implements Satellite, AstroBody, Primary
+class Planet extends Model implements Satellite, AstroBody, Primary, CenterPoint
 {
     use IsSatellite, IsPrimary, IsAstroBody;
 
@@ -13,7 +13,7 @@ class Planet extends Model implements Satellite, AstroBody, Primary
      */
     public function getIsNatural(): bool
     {
-        return $this->code !== 'nibiru';
+        return $this->code !== AstroObjects::nibiru;
     }
 
     /*

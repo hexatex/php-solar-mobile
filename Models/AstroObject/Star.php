@@ -1,6 +1,6 @@
 <?php
 
-class Star extends Model implements Primary
+class Star extends Model implements Primary, CenterPoint
 {
     use IsPrimary, IsAstroObject;
 

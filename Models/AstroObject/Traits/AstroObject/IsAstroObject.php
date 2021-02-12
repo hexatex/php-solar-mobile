@@ -32,4 +32,9 @@ trait IsAstroObject
     {
         $this->currentDateTime = $currentDateTime;
     }
+
+    public function updatePosition()
+    {
+        // Todo: implement a default method
+    }
 }

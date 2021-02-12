@@ -2,5 +2,5 @@
 
 class EclipticCoordinateSystem extends Model implements CoordinateSystem
 {
-    use IsCoordinateSystem;
+    use IsCoordinateSystem, HasAstronomicalModel;
 }
