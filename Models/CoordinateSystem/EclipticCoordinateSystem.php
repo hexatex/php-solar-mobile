@@ -13,4 +13,14 @@ class EclipticCoordinateSystem extends Model implements CoordinateSystem
     {
         return Poles::ecliptic_poles;
     }
+
+    public function getLatitude(): string
+    {
+        return Latitudes::ecliptic_latitude;
+    }
+
+    public function getLongitude(): string
+    {
+        return Longitudes::ecliptic_longitude;
+    }
 }

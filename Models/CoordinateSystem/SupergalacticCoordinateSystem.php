@@ -13,4 +13,14 @@ class SupergalacticCoordinateSystem extends Model implements CoordinateSystem
     {
         return Poles::supergalactic_poles;
     }
+
+    public function getLatitude(): string
+    {
+        return Latitudes::supergalactic_latitude;
+    }
+
+    public function getLongitude(): string
+    {
+        return Longitudes::supergalactic_longitude;
+    }
 }

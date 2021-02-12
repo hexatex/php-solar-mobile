@@ -11,4 +11,6 @@ interface CoordinateSystem
     public function getCenterPoint(): CenterPoint;
     public function getFundamentalPlane(): string;
     public function getPoles(): string;
+    public function getLatitude(): string;
+    public function getLongitude(): string;
 }

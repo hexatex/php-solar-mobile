@@ -13,4 +13,14 @@ class EquatorialCoordinateSystem extends Model implements CoordinateSystem
     {
         return Poles::celestial_poles;
     }
+
+    public function getLatitude(): string
+    {
+        return Latitudes::declination;
+    }
+
+    public function getLongitude(): string
+    {
+        return Longitudes::right_ascension_or_hour_angle;
+    }
 }

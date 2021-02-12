@@ -13,4 +13,14 @@ class GalacticCoordinateSystem extends Model implements CoordinateSystem
     {
         return Poles::galactic_poles;
     }
+
+    public function getLatitude(): string
+    {
+        return Latitudes::galactic_latitude;
+    }
+
+    public function getLongitude(): string
+    {
+        return Longitudes::galactic_longitude;
+    }
 }
