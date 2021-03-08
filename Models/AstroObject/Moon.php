@@ -11,17 +11,4 @@ class Moon extends Model implements Satellite, AstroBody
     {
         return $this->primary->getCode() !== AstroObjects::earth;
     }
-
-    /*
-     * AstroBody
-     */
-    public function getIsTightlyBound(): bool
-    {
-        return true;
-    }
-
-    public function updatePosition()
-    {
-        $this->updateOrbit();
-    }
 }
